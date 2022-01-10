@@ -1,0 +1,46 @@
+[
+{
+  "model": "webapp.elshop",
+  "pk": 1,
+  "fields": {
+    "name": "test1",
+    "description": "test1",
+    "category": "cosmetic",
+    "remnant": 4,
+    "cost": "123.00"
+  }
+},
+{
+  "model": "webapp.elshop",
+  "pk": 2,
+  "fields": {
+    "name": "test2",
+    "description": "test2",
+    "category": "other",
+    "remnant": 12,
+    "cost": "123.00"
+  }
+},
+{
+  "model": "webapp.elshop",
+  "pk": 3,
+  "fields": {
+    "name": "test3",
+    "description": "test3",
+    "category": "clothes",
+    "remnant": 12,
+    "cost": "123.00"
+  }
+},
+{
+  "model": "webapp.elshop",
+  "pk": 4,
+  "fields": {
+    "name": "test4",
+    "description": "test4",
+    "category": "cosmetic",
+    "remnant": 2,
+    "cost": "25.00"
+  }
+}
+]
