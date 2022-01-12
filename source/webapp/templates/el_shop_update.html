@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Update electronic shop{% endblock %}
+{% block nav %}
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'el_book_view' el_shop.pk%}">Вернуться к электронной книге</a>
+    </li>{% endblock %}
+{% block content %}
+    <h1>Update electronic shop</h1>
+    <form method="post">
+        {% include "partial/form.html" with button_text="Изменить"  %}
+    </form>
+
+{% endblock %}
+
+

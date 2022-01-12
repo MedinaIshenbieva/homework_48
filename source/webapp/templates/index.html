@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Электронный магазин</h1>
+    {% for shop in el_shop %}
+
+        <p><a href="{% url 'el_shop_view' shop.pk %}">Подробнее...</a></p>
+        <p><a href="{% url 'el_shop_update_view' shop.pk %}">Редактировать</a></p>
+        <p><a href="{% url 'el_shop_delete_view' shop.pk %}">Удалить</a></p>
+    {% endfor %}
+{% endblock %}

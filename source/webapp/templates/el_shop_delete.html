@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form action="{% url 'el_book_delete_view' el_shop.pk %}" method="POST">
+    {% csrf_token %}
+        <h2>Вы действительно хотите удалить электронный магазин {{ el_shop.title }}</h2>
+        <input type="submit" value="Да">
+    </form>
+    <a href="{% url 'article_view' el_shop.pk %}">Нет</a>
+{% endblock %}

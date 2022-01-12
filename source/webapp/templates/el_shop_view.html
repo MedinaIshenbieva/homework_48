@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Article {{ el_shop.pk }}{% endblock %}
+{% block nav %}
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'el_shop_add' %}">Создание электронного магазина</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'el_shop_update_view' el_shop.pk %}">Редактировать</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'el_shop_delete_view' el_shop.pk %}">Удалить</a>
+    </li>
+{% endblock %}
+{% block content %}
+    <h1>{{ el_shop.name }}</h1>
+    <p>{{ el_shop.description }}</p>
+    <p>{{ el_shop.category }}</p>
+    <p>{{ el_shop.remnant }}</p>
+    <p>{{ el_shop.cost }}</p>
+{% endblock %}
